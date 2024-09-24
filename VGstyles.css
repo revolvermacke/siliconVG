@@ -393,6 +393,7 @@ footer {
 #app-features {
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 
     .showcase-app-cards {
         display: none;
@@ -452,6 +453,87 @@ footer {
     flex-shrink: 0;
 }
 
+#work {
+    background-color: var(--color-bg-cards);
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.headline3 {
+    margin-top: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.mobile-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .headline-mobile {
+        text-align: center;
+        h3 {
+            padding-top: 2rem;
+            font-weight: 800;
+            font-size: 1.35rem;
+        }
+        p {
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 4rem;
+            color: var(--color-contentgray);
+        }
+    }
+}
+.tablet-first {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    .headline-tablet {
+        text-align: center;
+        h3 {
+            padding-top: 2rem;
+            font-size: 1.42rem;
+            font-weight: 800;
+        }
+        p {
+            color: var(--color-contentgray);
+            padding-top: 1rem;
+            padding-bottom: 4rem;
+        }
+    }
+}
+.desktop-first {
+    display: none;
+
+    .headline-desktop {
+        text-align: center;
+        h3 {
+            padding-top: 2rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        p {
+            color: var(--color-contentgray);
+            padding-top: 1rem;
+            padding-bottom: 4rem;
+        }
+    }
+}
+
+.phones-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+
+
+
+
 
 
 
@@ -490,6 +572,16 @@ footer {
         gap: 2rem 3rem;
     }
 
+    .mobile-first {
+        display: none;
+    }
+    .tablet-first {
+        display: flex;
+        
+    }
+
+
+
 }
 
 @media (min-width: 1400px) {
@@ -518,6 +610,13 @@ footer {
         display: flex;
     }
 
+    .tablet-first {
+        display: none;
+    }
+
+    .desktop-first {
+        display: block;
+    }
 
 
 }
